@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+**Project Title**:Combat Master
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Project Description**: A general use TTRPG combat tracker.
 
-## Expanding the ESLint configuration
+**Project Goals**: Have a simple program to track the turn order for TTRPGs.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instructions for Build and Use
 
-- Configure the top-level `parserOptions` property like this:
+Steps to build and/or run the software:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Download the project
+2. Install dependencies with the command "npm install"
+3. run the program with the command "npm run dev"
+4. copy and past the generated link into a browser
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Instructions for using the software:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Enter a creature name and its initiative score in the input fields.
+2. Click the "Add Creature" button to add the creature to the initiative list.
+3. Use the "Next Turn" button to cycle through each creature's turn. The current turn is highlighted in bold.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Development Environment 
+
+To recreate the development environment, you need the following software and/or libraries with the specified versions:
+
+* Neovim
+* Node 
+* React
+* Typescript
+* Vite
+
+## Useful Websites to Learn More
+
+I found these websites useful in developing this software:
+
+* [W3Schools](https://www.w3schools.com/react/)
+* [Stack Overflow](https://stackoverflow.com/)
+
+## Future Work
+
+The following items I plan to fix, improve, and/or add to this project in the future:
+
+* [ ] Intigrate a database that incorparates monsters in D&Ds SRD. 
+* [ ] Add Health tracking.
+* [ ] Add automatic attack and damage rolls.
+* [ ] Allow the user to manually rearrange the turn order.
